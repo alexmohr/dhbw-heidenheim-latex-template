@@ -246,3 +246,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Generated files by vscode
+__latexindent_temp.tex
