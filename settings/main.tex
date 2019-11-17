@@ -4,7 +4,7 @@
 % http://ctan.mirrorcatalogs.com/macros/latex/contrib/biblatex/doc/biblatex.pdf (3.3.1 Citation Styles)
 % recommended:  z.B numeric-comp, alphabetic, 
 % not recommended: authoryear, alphabetic-verb, 
-\newcommand{\quoteStyle}{alphabetic-verb}
+\newcommand{\quoteStyle}{numeric-comp}
 
 %% Fonts
 %% palatino, goudysans, lmodern or libertine
@@ -24,7 +24,7 @@
 
 %% Color settings
 \newcommand{\defineColors}{%
-	\definecolor{LinkColor}{HTML}{00007A}
+	\definecolor{LinkColor}{HTML}{\linkColor}
 	\definecolor{ListingBackground}{HTML}{F8F8F8}
 }
 
@@ -41,7 +41,8 @@
 		postbreak=\space,		% break line after space
 		tabsize=2,				% tabulator size
 		basicstyle=\ttfamily\footnotesize, % font style
-		showspaces=false,		% show space (true, false)		showstringspaces=false,	% show space in strings (true, false)
+		showspaces=false,		% show space (true, false)		
+		showstringspaces=false,	% show space in strings (true, false)
 		extendedchars=true,		% show all Latin1 characters (true, false)
 		captionpos=b,			% sets the caption-position to bottom
 		backgroundcolor=\color{ListingBackground}, % source code background

@@ -21,9 +21,12 @@
 	toc=bibliography,	    % Show Bibliography in Contents
 ]{scrreprt}	                     % Koma-Script report-class, long document: scrreprt, short document: scrbook
 
+\usepackage{svg}
 \usepackage{xstring}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+
+\newcommand{\code}[1]{\texttt{#1}}
 
 % iflang command definition
 \newcommand{\iflang}[2]{%
@@ -166,3 +169,5 @@
 % Spaces in tables
 \setlength{\tabcolsep}{\tableColumnMargin}
 \renewcommand{\arraystretch}{\tableRowMargin}
+
+\newcommand{\mrm}[1]{$\mathrm{#1}$}
