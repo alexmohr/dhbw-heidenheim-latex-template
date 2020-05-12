@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Makes sure we have one sentence per line
+for f in ` git diff --name-only --staged`; do
+    for i in {0..50}; do
+        sed 's/\. [^\n]/\. \n/' -i  $f
+    done
+    git add $f
+done
+
